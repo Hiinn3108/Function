@@ -13,12 +13,13 @@
             margin: 50px auto;
             padding: 20px;
             border: 1px solid #ccc;
-            background-color: #f9f9f9;
+            background-color: pink;
             border-radius: 10px;
         }
         h1 {
             text-align: center;
-            color: blue;
+            color: black
+            ;
         }
         .result {
             text-align: center;
@@ -39,14 +40,14 @@
         button {
             width: 48%;
             padding: 10px;
-            background-color: #473b;
-            color: white;
+            background-color: while;
+            color: black;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
         button:hover {
-            background-color: #832;
+            background-color: pink;
         }
     </style>
 </head>
@@ -66,7 +67,7 @@
             </select>
             <div class="buttons">
                 <button type="submit">Tính Toán</button>
-                <button type="reset">Cancel</button>
+                <button type="reset">Thoát</button>
             </div>
         </form>
         <?php
@@ -77,7 +78,7 @@
             if ($year == 1){
                 $average = ($semester1 + $semester2) / 2;
             }elseif($year == 2){
-                $average = ($semester1 + ($semester2*2)) / 3;
+                $average = ($semester1 + ($semester2*3)) / 3;
             }else {
                 $average = ($semester1 + ($semester2*3)) / 4;
             }
